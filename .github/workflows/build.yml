@@ -21,7 +21,7 @@ jobs:
         with:
           images: ghcr.io/${{ github.repository }}
           tags: |
-            type=raw,staging
+            type=raw,latest
       - name: Build Image
         uses: docker/build-push-action@v2
         with:
